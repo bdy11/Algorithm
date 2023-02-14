@@ -7,7 +7,7 @@ void merge(vector<int> &arr, int L, int M, int R)
     vector<int> help;
     int p1 = L;
     int p2 = M + 1;
-    while(p1<=M && p2<= R)
+    while(p1 <= M && p2 <= R)
     {
         help.push_back(arr[p1] <= arr[p2]? arr[p1++] : arr[p2++]);
     }
@@ -15,7 +15,7 @@ void merge(vector<int> &arr, int L, int M, int R)
     {
         help.push_back(arr[p1++]);
     }
-    while(p2<= R)
+    while(p2 <= R)
     {
         help.push_back(arr[p2++]);
     }
@@ -47,8 +47,7 @@ void mergeSort(vector<int> &arr)
 
 }
 
-
-
+// write test cases here and check results
 int main()
 {
     vector<int> arr{1, 5, 4, 3, 6, 8, 1};
@@ -62,6 +61,4 @@ int main()
     
     std::cout<< arr.size()<<endl; 
     return 0;
-    
-
 }
