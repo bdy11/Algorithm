@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/15_Algorithm/Algorithm/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -ID:/15_Algorithm/Algorithm/mergesort -ID:/15_Algorithm/Algorithm/1d_kalman_filter -g -o CMakeFiles\\common_algo.dir\\main.cpp.obj -c D:\\15_Algorithm\\Algorithm\\main.cpp",
+  "file": "D:\\15_Algorithm\\Algorithm\\main.cpp"
+},
+{
+  "directory": "D:/15_Algorithm/Algorithm/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMER_SOR_VERSION=1.1 -ID:/15_Algorithm/Algorithm/mergesort -g -o mergesort\\CMakeFiles\\mergesort_lib.dir\\mergesort.cpp.obj -c D:\\15_Algorithm\\Algorithm\\mergesort\\mergesort.cpp",
+  "file": "D:\\15_Algorithm\\Algorithm\\mergesort\\mergesort.cpp"
+},
+{
+  "directory": "D:/15_Algorithm/Algorithm/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DKAL_FIL_VERSION=1.1 -ID:/15_Algorithm/Algorithm/1d_kalman_filter -g -o 1d_kalman_filter\\CMakeFiles\\1d_kalman_filter_lib.dir\\1d_kalman_filter.cpp.obj -c D:\\15_Algorithm\\Algorithm\\1d_kalman_filter\\1d_kalman_filter.cpp",
+  "file": "D:\\15_Algorithm\\Algorithm\\1d_kalman_filter\\1d_kalman_filter.cpp"
+}
+]

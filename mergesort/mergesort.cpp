@@ -1,5 +1,5 @@
-#include <vector>
 #include <iostream>
+#include "mergesort.h"
 using namespace std;
 
 void merge(vector<int> &arr, int L, int M, int R)
@@ -48,7 +48,7 @@ void mergeSort(vector<int> &arr)
 }
 
 // write test cases here and check results
-int main()
+void test_merge_sort()
 {
     vector<int> arr{1, 5, 4, 3, 6, 8, 1};
     
@@ -60,5 +60,4 @@ int main()
     }
     
     std::cout<< arr.size()<<endl; 
-    return 0;
 }

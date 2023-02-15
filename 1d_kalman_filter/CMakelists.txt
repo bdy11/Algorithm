@@ -1,0 +1,9 @@
+add_library(
+    1d_kalman_filter_lib
+    "${CMAKE_CURRENT_SOURCE_DIR}/1d_kalman_filter.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/1d_kalman_filter.cpp"
+    )
+
+target_include_directories(1d_kalman_filter_lib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_compile_definitions(1d_kalman_filter_lib PRIVATE KAL_FIL_VERSION=1.1)

@@ -1,0 +1,1 @@
+void update(double mean1, double var1, double mean2, double var2, double &new_mean, double &new_var);

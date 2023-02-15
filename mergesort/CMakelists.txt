@@ -1,0 +1,9 @@
+add_library(
+    mergesort_lib
+    "${CMAKE_CURRENT_SOURCE_DIR}/mergesort.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/mergesort.cpp"
+    )
+
+target_include_directories(mergesort_lib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_compile_definitions(mergesort_lib PRIVATE MER_SOR_VERSION=1.1)
