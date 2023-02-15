@@ -6,4 +6,4 @@ add_library(
 
 target_include_directories(1d_kalman_filter_lib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
-target_compile_definitions(1d_kalman_filter_lib PRIVATE KAL_FIL_VERSION=1.1)
+target_compile_definitions(1d_kalman_filter_lib PRIVATE 1D_KAL_FIL_VERSION=1.1)

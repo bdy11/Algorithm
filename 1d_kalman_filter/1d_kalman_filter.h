@@ -1,1 +1,2 @@
-void update(double mean1, double var1, double mean2, double var2, double &new_mean, double &new_var);
+void update(double &mu, double &sig, double measurement, double measurement_sig);
+void predict(double &mu, double &sig, double measurement, double measurement_sig);
