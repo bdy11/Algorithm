@@ -1,0 +1,9 @@
+add_library(
+    binarytree_lib
+    "${CMAKE_CURRENT_SOURCE_DIR}/binarytree.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/binarytree.cpp"
+    )
+
+target_include_directories(binarytree_lib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_compile_definitions(binarytree_lib PRIVATE BINARY_TREE_VERSION=1.1)

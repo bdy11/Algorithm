@@ -1,0 +1,9 @@
+add_library(
+    doublelinkedlist_lib
+    "${CMAKE_CURRENT_SOURCE_DIR}/DoubleLinkedList.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/DoubleLinkedList.cpp"
+    )
+
+target_include_directories(doublelinkedlist_lib PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+
+target_compile_definitions(doublelinkedlist_lib PRIVATE LINKED_LIST_VERSION=1.1)
