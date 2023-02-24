@@ -6,7 +6,6 @@ typedef  int UPS_PERCEPTION_POINT;
 
 typedef struct feature_cache{
     int size;
-    UPS_PERCEPTION_POINT* p_feature[UPS_PERCEPTION_FEATURE_MAX];
     UPS_PERCEPTION_POINT feature[UPS_PERCEPTION_FEATURE_MAX];
 }FEATURE_CACHE;
 
@@ -15,9 +14,9 @@ void push_back_feature_point(FEATURE_CACHE feature_cache, UPS_PERCEPTION_POINT *
 
 void del_feature_point(FEATURE_CACHE feature_cache, UPS_PERCEPTION_POINT *feature_point);
 
-UPS_PERCEPTION_POINT * get_feature_point(FEATURE_CACHE feature_cache, int idx);
+UPS_PERCEPTION_POINT * get_feature_point(FEATURE_CACHE *feature_cache, int idx);
 
-bool is_cache_empty(FEATURE_CACHE feature_cache);
-
+bool is_cache_empty(FEATURE_CACHE * feature_cache);
+bool is_cache_full(FEATURE_CACHE * feature_cache);
 
 #endif // FEATURE_POINT_ARRAY_H
